@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Harry Potter Character Slider</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="character-slider-section" class="character-slider-section">
+      <div class="container">
+        <h1>Harry Potter Characters</h1>
+        <p>
+          Explore the magical world of Harry Potter through its iconic
+          characters. Swipe through to learn more!
+        </p>
+
+        <div class="filter-wrapper">
+          <div class="filter-container">
+            <div class="filter-item-wrapper">
+              <label for="name-filter">Name:</label>
+              <input
+                type="text"
+                id="name-filter"
+                placeholder="Filter by name"
+              />
+            </div>
+            <div class="filter-item-wrapper">
+              <label for="house-filter">House:</label>
+              <select id="house-filter">
+                <option value="">All Houses</option>
+              </select>
+            </div>
+            <div class="filter-item-wrapper">
+              <label for="species-filter">Species:</label>
+              <select id="species-filter">
+                <option value="">All Species</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-container">
+          <div class="slider-wrapper"></div>
+          <div class="slider-buttons">
+            <button class="slider-button prev-button">←</button>
+            <button class="slider-button next-button">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
